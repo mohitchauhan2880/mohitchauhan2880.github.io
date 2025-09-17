@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Mohit Chauhan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <noscript>Browser JavaScript not available.</noscript>
+        <link rel = "stylesheet" href = "style.css">
+        <script src="https://kit.fontawesome.com/f656d729fb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <div class = "container">
+                <nav>
+                    <ul id = "sidemenu">
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick = "closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id = "open-menu-button" onclick = "openmenu()"></i>
+                </nav>
+                <div class = "header-text">
+                    <h1>Hello, I am <span> Mohit Chauhan </span> <br> from Gwalior</h1>
+                </div>
+            </div>
+        </div>
+        <div class = "about" id = "about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "about-col-1">
+                        <img src = "Assets/Images/user.png">
+                    </div>
+                    <div class = "about-col-2">
+                        <h1 class = "sub-title">
+                            About Me
+                        </h1>
+                        <p>
+                            Aspiring Marketing professional aiming to leverage knowledge of consumer behavior and market needs to contribute to
+organizational growth while gaining valuable industry exposure.
+                        </p>
+                        <div class = "tab-titles">
+                            <p class = "tab-links active-link" onclick = "opentab('skills')">
+                                Technical Skills
+                            </p>
+                            <p class = "tab-links" onclick = "opentab('soft-skills')">
+                                Soft Skills
+                            </p>
+                            <p class = "tab-links" onclick = "opentab('experience')">
+                                Experience
+                            </p>
+                            <p class = "tab-links" onclick = "opentab('education')">
+                                Education
+                            </p>
+                        </div>
+                        <div class = "tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li>
+                                   Microsoft Excel, Microsoft PowerPoint
+                                </li>
+                                <li>
+                                    <span>
+                                        Additional
+                                    </span>
+                                    <br>
+                                    Public Relations, Critical Thinking
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "soft-skills">
+                            <ul>
+                                <li>
+                                    <span>
+                                        Communication
+                                    </span>
+                                    <br>
+                                    Public Relations, Effective client relationship building, Public Speaking
+                                </li>
+                                <li>
+                                    <span>
+                                        Leadership
+                                    </span>
+                                    <br>
+                                    Pressurised Performance, Team Management, Conflict Resolution
+                                </li>
+                                <li>
+                                    <span>
+                                        Interpersonal Skills
+                                    </span>
+                                    <br>
+                                    Teamwork, Collaboration, Empathy
+                                </li>
+                                <li>
+                                    <span>
+                                        Other
+                                    </span>
+                                    <br>
+                                    Strategic Decision Making, Data-driven Insights, Adaptability
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "experience">
+                            <ul>
+                                <li>
+                                    <span>
+                                        Lead Generator Intern - Bonhoeffer Machines
+                                    </span>
+                                    <span class = "experience-time">
+                                        (May - Jul 2025)
+                                    </span>
+                                    <br>
+                                    Conducted comprehensive market research across the Dominican Republic, Rajasthan, and Jamaica, identifying and building a structured database of 6,300+ potential business leads; enhancing the sales pipeline, improving reporting and data management processes, and driving data-driven decision-making and strategic growth.
+                                </li>
+                                <li>
+                                    <span>
+                                        Sales Intern - Dabur India Ltd
+                                    </span>
+                                    <span class = "experience-time">
+                                        (Jul - Aug 2025)
+                                    </span>
+                                    <br>
+                                    Conducted on-field research to identify distribution gaps and retailer challenges in rural markets; analyzed retailers’ sales data using Excel dashboards to uncover growth opportunities and optimize territory performance; assessed the impact of sales promotion awareness on rural brand performance; and evaluated general trade (GT) distribution channels to enhance FMCG penetration and improve product availability.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "education">
+                            <ul>
+                                <li>
+                                    <span>
+                                        Class XII
+                                    </span>
+                                    <br>
+                                    67% in Army Public School, Gwalior
+                                </li>
+                                <li>
+                                    <span>
+                                        Bachelor of Science
+                                    </span>
+                                    <br>
+                                    64.42% in Government Model Science College, Gwalior
+                                </li>
+                                <li>
+                                    <span>
+                                        MBA
+                                    </span>
+                                    <br>
+                                    Army Institute of Management, Kolkata
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class = "sub-title">Contact Me</h1>
+                        <p><a href="mailto:mohit2880a@aim.ac.in"><i class="fa-solid fa-paper-plane"></i></a>mohit2880a@aim.ac.in</p>
+                        <p><i class="fa-solid fa-mobile"></i>+91-9329345851</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mohit-chauhan-231130338/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="Assets/Documents/Mohit Chauhan - CV.pdf" download class = "btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contact-form">
+                            <input type = "text" name = "Name" placeholder = "Your Name" required>
+                            <input type = "email" name = "E-mail" placeholder = "Your Email" required>
+                            <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                            <button type = "submit" class = "btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2025 © Ravi Kumar<br>Royalty Free Music: Bensound.com/royalty-free-music</p>
+            </div>
+        </div>
+        <div class="music-control">
+            <button id="toggle-control"><i class="fa-solid fa-chevron-up"></i></button>
+            <div class="control-content">
+                <button id="prev-track"><i class="fa-solid fa-backward"></i></button>
+                <button id="play-pause"><i class="fa-solid fa-play"></i></button>
+                <button id="next-track"><i class="fa-solid fa-forward"></i></button>
+                <p id="track-info">No track playing</p>
+            </div>
+            <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+            <button id="mute-toggle"><i class="fa-solid fa-volume-up"></i></button>
+        </div>        
+                
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            var openmenubutton = document.getElementById("open-menu-button");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+                openmenubutton.style.display = "none";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+                openmenubutton.style.display = "block";
+            }
+        </script>
+
+        <script>
+            const form = document.getElementById('contact-form');
+          
+            form.addEventListener('submit', async function (e) {
+              e.preventDefault(); // Prevent page reload
+          
+              const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+              };
+          
+              const googleScriptURL = "https://script.google.com/macros/s/AKfycbwoxgq2ZALFJXVyZ9ViHJaOIvCzE6gmDKicu9M8ajD6Z9e4WWAb9qjYdu3RZLVgNS_aBw/exec";
+          
+              try {
+                const response = await fetch(googleScriptURL, {
+                  method: "POST",
+                  mode: "no-cors",
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify(formData)
+                });
+          
+                alert("Message sent successfully!");
+                form.reset();
+              } catch (error) {
+                alert("Error submitting form. Please try again.");
+                console.error("Error:", error);
+              }
+            });
+        </script>
+
+        <script>
+            const toggleButton = document.getElementById("toggle-control");
+            const musicControl = document.querySelector(".music-control");
+
+            toggleButton.addEventListener("click", () => {
+                musicControl.classList.toggle("collapsed");
+
+                // Toggle icon change
+                if (musicControl.classList.contains("collapsed")) {
+                    toggleButton.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+                } else {
+                    toggleButton.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+                }
+            });
+
+            const tracks = [
+                { src: "Assets/Music/Prism.mp3", title: "Prism - Theatre of Delays (Licence Code: UHJXLPIJE1BCMOSU)" },
+                { src: "Assets/Music/Long-Night.mp3", title: "Long Night - Adventure (License code: GUEMOBY8XQ411ZBZ)" },
+                { src: "Assets/Music/track3.mp3", title: "Refract - Diffie Bosman (License code: NVSCO4EWRXAYTYDU)" }
+            ];
+
+            const audio = new Audio();
+            let currentTrackIndex = 0;
+
+            const playPauseButton = document.getElementById("play-pause");
+            const nextButton = document.getElementById("next-track");
+            const prevButton = document.getElementById("prev-track");
+            const volumeControl = document.getElementById("volume-control");
+            const muteButton = document.getElementById("mute-toggle");
+            const trackInfo = document.getElementById("track-info");
+
+            function loadTrack(index) {
+                audio.src = tracks[index].src;
+                trackInfo.textContent = tracks[index].title;
+                audio.play();
+                playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            }
+
+            playPauseButton.addEventListener("click", () => {
+                if (audio.paused) {
+                    audio.play();
+                    playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+                } else {
+                    audio.pause();
+                    playPauseButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+                }
+            });
+
+            nextButton.addEventListener("click", () => {
+                currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+                loadTrack(currentTrackIndex);
+            });
+
+            prevButton.addEventListener("click", () => {
+                currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+                loadTrack(currentTrackIndex);
+            });
+
+            volumeControl.addEventListener("input", () => {
+                audio.volume = volumeControl.value;
+            });
+
+            muteButton.addEventListener("click", () => {
+                if (audio.muted) {
+                    audio.muted = false;
+                    muteButton.innerHTML = '<i class="fa-solid fa-volume-up"></i>';
+                } else {
+                    audio.muted = true;
+                    muteButton.innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
+                }
+            });
+
+            // Load the first track on page load
+            window.addEventListener("load", () => loadTrack(currentTrackIndex));
+        </script>        
+    </body>
+</html>
